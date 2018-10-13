@@ -16,24 +16,6 @@
 		    this.className += " selectedType";
 		  });
 		}
-		var header = document.getElementById("active");
-		var btns = header.getElementsByClassName("sec");
-		for (var i = 0; i < btns.length; i++) {
-		  btns[i].addEventListener("click", function() {
-		    var current = document.getElementsByClassName("custom3");
-		    current[0].className = current[0].className.replace(" custom3", "");
-		    this.className += " custom3";
-		  });
-		}
-		var imActive = document.getElementById("actives");
-		var btns = imActive.getElementsByClassName("selec");
-		for (var i = 0; i < btns.length; i++) {
-		  btns[i].addEventListener("click", function() {
-		    var current = document.getElementsByClassName("currentPay");
-		    current[0].className = current[0].className.replace(" currentPay", "");
-		    this.className += " currentPay";
-		  });
-		}
 		function foodValueChanger() {
 		  document.getElementById("randValue1").innerHTML = "Breades";
 		  document.getElementById("randValue2").innerHTML = "Pastas";
