@@ -1,0 +1,262 @@
+body {
+	background-color: #F5F5F5;
+}
+
+.navbar2 {
+	box-shadow: 0 8px 6px -6px #999;
+	background-color: white;
+}
+
+.navbar > img {
+	height: 70px;
+	width: 200px;
+}
+
+.navbar-nav > li {
+	background-color: #F3F0F0;
+	margin-right: 10px;
+	border-radius: 25px;
+	color: #E33E3F;
+	text-align: center;
+}
+
+.nav-item {
+	width: 200px;
+}
+
+/*.navbar-nav > li > a {padding-right:65px !important; padding-left:65px !important;}*/
+
+.nav-active {
+	background-color: white;
+}
+
+.nav-link {
+	color: #E33E3F !important;
+}
+
+.container {
+	width: 100%;
+}
+
+.left-col-cust {
+	box-shadow: 8px 0px 6px -6px #999;
+	height: 800px;
+	padding: 25px 30px 75px 30px;
+}
+
+.right-col-cust {
+	padding: 25px 30px 75px 30px;
+}
+
+.customerLeft {
+	margin-top: 25px;
+}
+
+.btn-danger {
+	background-color: transparent;
+	color: black;
+	box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid lightgray;
+	border-radius: 25px;
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.btn-fullWidth {
+	width: 100%;
+}
+
+.btn-danger:hover {
+	background-color: transparent;
+	color: black;
+}
+
+.customerSpecial {
+	margin-top: -5%;
+}
+
+.itemsTitle {
+	background-color: white;
+	margin-top: 25px;
+}
+
+.itemCount {
+	color: gray;
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+
+.itemList {
+	background-color: white;
+	padding: 10px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+  background-color: #EEECEC;
+}
+
+.fa-plus {
+	color: #E73A3C;
+	font-size: 12px;
+}
+
+.item-Place {
+	height: 300px;
+}
+
+.fc {
+	font-size: 12px;	
+}
+
+.custom2, .custom3 {
+    background-color: #EFEFEF;
+    border: none;
+    color: white;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+	box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid lightgray;
+	height: 110px;
+	width: 110px;
+}
+
+.fastCash {
+	height: 90px;
+	width: 90px;
+}
+
+.fa-bolt {
+	color: #E79712;
+	font-size: 20px;
+}
+
+.payment2nd {
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.totalCost h1 {
+	color: #E73A3C;
+}
+
+.totalCost p {
+	color: brown;
+	font-weight: bold;;
+}
+
+.paymentType {
+	margin-top: 25px;
+	border-top: 1px solid lightgray;
+}
+
+
+.fa-times, .fa-percent, .fa-clock, .fa-dollar-sign {
+	color: #E73A3C;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.currentPay {
+	color: white;
+	padding-bottom: 35px;
+}
+
+.co {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.custom3 {
+    background-color: #E73A3C;
+	color: white;
+	padding-bottom: 35px;
+}
+
+.myInput {
+  background-image: url("searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border-radius:25px;
+}
+
+.nav-bg-color {
+	background-color: #EFEFEF;
+	padding: 0px;
+	border: 1px solid lightgray;
+    border-radius: 25px 25px 0px 0;
+
+}
+
+.activeSelectionP1 {
+	background-color: #E73A3C;
+	color: white !important;
+	border: 25px 0 0 0;
+}
+
+.pad, .pad2 {
+	padding: 50px 20px;
+	width: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.itemSelection {
+	height: 700px;
+	background-color: white;
+	border-radius: 25px !important;
+}
+
+.padSp {
+	border-radius: 25px 0 0 0 ;
+}
+
+
+.padNoBor {
+	border-left: none !important;
+}
+
+.rightBor {
+	border-right: 1px solid lightgray;
+}
+
+.pad2 {
+	padding: 10px;
+	border-bottom: 1px solid lightgray;
+}
+
+.selectedType {
+	border-bottom: 5px solid #E73A3C;
+}
+
+.fa-bars {
+	font-size: 20px;
+}
+
+.specialButton {
+	width: 18%;
+	margin: 4px;
+	padding: 35px;
+	box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+	background-color: #EFEFEF;
+	color: gray;
+	border: 1px solid lightgray;
+}

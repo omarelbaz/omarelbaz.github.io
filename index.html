@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuisine</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light navbar2">
+	  <img src="cuisine.png">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav ml-auto">
+		  	<li class="nav-item">
+		    	<a class="nav-link nav-active" href="#">Business Day / Shift</a>
+		  	</li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          MODE: Takeaway
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Order Queue</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Admin</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	  <div class="row">
+	    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 left-col-cust">
+	      <div class="container">
+			  <div class="row">
+			    <div class="col-sm">
+			    	<div class="dateTime" id="currentDate"></div>
+			    </div>
+			    <div class="col-sm">
+			      <div class="dateTime" id="time"></div>
+			    </div>
+			    <div class="col-sm">
+					<div class="dateTime">Minimum Charge 0.00</div>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 customerLeft">
+					<h3>Takeaway #100</h3>
+					<p class="customerSpecial">Ahmed Salom</p>
+			    </div>
+			    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+			      <button type="button" class="btn btn-danger btn-fullWidth">Customer Name</button>
+			    </div>
+			  </div>
+			  <div class="row itemsTitle">
+				  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">Qty</div>
+				  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">Item</div>
+				  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2">Size</div>
+				  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2">Each</div>
+				  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2">Total</div>
+			   </div>
+			   <div class="row">
+			   		<div class="col itemCount">No Items Currently in Order</div>
+			   </div>
+			   <div class="row itemList">
+			   		<div class="col-xl-12 item-Place">
+			      <button type="button" class="btn .btn-primary btn-circle"><i class="fas fa-plus"></i></button></i></div>
+			   		<div class="col-xl-12">
+			   			<div class="row">
+						    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+						      <button type="button" class="custom2 fastCash"><i class="fas fa-bolt"><br><span class="fc">Fast Cash</span></i></button>
+						    </div>
+						    <div class="col-sm-12 col-md-12 col-lg-3 co-lxl-3">
+						      <div class="row">
+							    <div class="col-xl-12 payment2nd">
+							      Discount: 0.00
+							    </div>
+							    <div class="col-xl-12 payment2nd">
+							      SubCharge: 0.00
+							    </div>
+							    <div class="col-xl-12 payment2nd">
+							      Tax: 0.00
+							    </div>
+							  </div>
+						    </div>
+						    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						      <div class="row totalCost">
+							    <div class="col-xl-12">
+							      <h1>Total: 50.00</h1>
+							    </div>
+							    <div class="col-xl-12">
+							      <p>Balance due: 50.00</p>
+							    </div>
+							  </div>
+						    </div>
+						  </div>
+			   		</div>
+			   		<div class="col-xl-12" id="actives">
+			   			<div class="row paymentType" id="active">
+						  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
+						  	<button type="button" class="sec custom2"><i class="fas fa-times selec"><br><span class="co">Cancel Order</span></i></button>
+						  </div>
+						  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
+						  	<button type="button" class="sec custom2"><i class="fas fa-percent selec"><br><span class="co">Discount Order</span></i></button>
+						  </div>
+						  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
+						  	<button type="button" class="sec custom2"><i class="far fa-clock selec"><br><span class="co">Hold Order</span></i></button>
+						  </div>
+						  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
+						  	<button type="button" class="sec custom2 custom3"><i class="fas fa-dollar-sign currentPay selec"><br><span class="co">Pay</span></i></button>
+						  </div>
+						</div>
+			   		</div>
+			   </div>
+			</div>
+	    </div>
+	    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 right-col-cust">
+	      <div class="row">
+		    <div class="col">
+		      <input type="text" class="myInput" placeholder="Search Item">
+		    </div>
+		   </div>
+		   <div class="itemSelection">
+			<nav class="navbar navbar-light nav-bg-color" id="myActive">
+  				<a class="nav-item nav-link nav-border activeSelectionP1 pad padSp" href="#" onclick="foodValueChanger()">Food</a>
+			      <a class="nav-item nav-link nav-border pad rightBor" href="#" onclick="beverageValueChanger()">Beverage</a>
+			      <a class="nav-item nav-link nav-border pad rightBor" href="#" onclick="marchandiseValueChanger()">Marchandise</a>
+			      <a class="nav-item nav-link nav-border pad rightBor" href="#" onclick="mealValueChanger()">Meal</a>
+			      <a class="nav-item nav-link nav-border pad padNoBor" href="#"><i class="fas fa-bars"></i></a>
+			</nav>	
+			<nav class="navbar navbar-light" id="myActiveBuBor">
+  				<a class="nav-item nav-link pad2" href="#" id="randValue1" onclick="breadValueChanger()">Breades</a>
+			      <a class="nav-item nav-link pad2 selectedType" href="#" id="randValue2" onclick="pastaValueChanger()">Pastas</a>
+			      <a class="nav-item nav-link pad2" href="#" id="randValue3" onclick="pizzaValueChanger()">Pizzas</a>
+			      <a class="nav-item nav-link pad2" href="#" id="randValue4" onclick="soupValueChanger()">Soup</a>
+			      <a class="nav-item nav-link pad2" href="#"><i class="fas fa-bars"></i></a>
+			</nav>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all1">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all2">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all3">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all4">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all5">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all6">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all7">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all8">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all9">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all10">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all11">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all12">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all13">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all14">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all15">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all16">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all17">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all18">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all19">Pasta</button>
+				<button type="button" class="btn btn-secondary specialButton" id="btn-all20">Pasta</button>
+			  </div>
+			    </div>			
+    <script src="myscripts.js"></script>	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
